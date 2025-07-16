@@ -4,8 +4,8 @@ public class Expression
 {
 	public List<string> Expressions { get; }
 	public List<List<string>> Groups { get; }
-    private int VarCount { get; }
-	public Expression(List<int> TrueValues)
+    public int VarCount { get; }
+	public Expression(List<int> TrueValues) // 010 101
 	{
 		TrueValues.Sort();
 		this.Expressions = new List<string>();
@@ -13,6 +13,7 @@ public class Expression
 		for (int i = 0; i < TrueValues.Count; i++)
 		{
 			Expressions.Add(Convert.ToString(TrueValues[i], 2));
+			Expressions[i] = Expressions[i].PadLeft(this.VarCount, '0');
 		}
 		int Index = 0;
 		List<string>? CurrentGroup = new();
