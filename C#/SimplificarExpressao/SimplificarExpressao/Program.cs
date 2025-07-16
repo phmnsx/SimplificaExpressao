@@ -4,15 +4,18 @@ class Program
 {
     public static void Main()
     {
-        List<int> array = [1, 2 , 4, 5 ,6, 9, 12,18, 16, 19 , 24]; // 011 010 100
+        List<int> array = [4,5,7,6];
         Expression teste = new(array);
         SimplifiedExpression teste2 = new(teste);
         Console.WriteLine("a");
-    
+        for (int i = 0; i < teste.Expressions.Count; i++)
+        {
+            Console.WriteLine(teste.Expressions[i]); //Da as expressoes q dão verdade "cruas"
+        }
         Console.WriteLine("b");
         for (int i = 0; i < teste2.AllExpressions.Count; i++)
         {
-            Console.WriteLine(teste2.AllExpressions[i]);
+           Console.WriteLine(teste2.AllExpressions[i]); //Da as expressoes q dão verdade com os valores q não importam sendo '-', ou seja, (0100 or 0101) = (010-)
         }
     }
 }

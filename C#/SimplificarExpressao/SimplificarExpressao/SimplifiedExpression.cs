@@ -15,31 +15,38 @@ namespace SimplificarExpressao
         public List<List<string>> Groups { get; set; }
         public SimplifiedExpression(Expression expression)
         {
-            this.Groups = expression.Groups;
-            this.AllExpressions = expression.Expressions;
+            this.Groups = new(expression.Groups);
+            this.AllExpressions = new List<string>(expression.Expressions);
             this.SimplifiedExpressions = new List<string>();
             int Changes;
             do
             {
+                int Changes1 = 0;
                 Changes = 0;
                 for (int i = 0; i < this.Groups.Count; i++) // -1 ou -2 ?
                 {
                     for (int j = i + 1; j < this.Groups.Count; j++)
                     {
-                        if (!(this.Groups.Count < j))
+                        if (!(this.Groups.Count <= j))
                         {
                             this.SimplifiedExpressions.AddRange(CompareGroups(this.Groups[i], this.Groups[j]));
+                            Changes1++;
                         }
                     }
                 }
-                SimplifiedExpressions = [.. SimplifiedExpressions.Distinct()];
-                AllExpressions.AddRange(SimplifiedExpressions);
-                AllExpressions = [.. AllExpressions.Distinct()];
+                if (Changes1 > 0)
+                {
+                    SimplifiedExpressions = [.. SimplifiedExpressions.Distinct()];
+                    AllExpressions.AddRange(SimplifiedExpressions);
+                    AllExpressions = [.. AllExpressions.Distinct()];
+                }
+                
                 bool b = EliminateEquivalents();
                 if (b)
                 {
                     Changes++;
                 }
+                
                 List<string>? CurrentGroup = new();
                 this.Groups = new();
                 for (int i = 0; i < expression.VarCount; i++)
@@ -49,7 +56,6 @@ namespace SimplificarExpressao
                         break;
                     this.Groups.Add(CurrentGroup);
                 }
-                
             } while (Changes != 0);
         }
 
@@ -112,25 +118,34 @@ namespace SimplificarExpressao
         private bool EliminateEquivalents()
         {
             int Changes = 0;
-            string Dummy2;
-            for(int i = 0; i < this.AllExpressions.Count; i++)
+            List<string> Dummy2 = this.AllExpressions;
+            int Flag = 0;
+            do
             {
-                string Dummy = this.AllExpressions[i];
-                for (int j = 0; j < this.AllExpressions.Count; j++)
+                Changes = 0;
+                for(int i = 0; i < Dummy2.Count; i++)
                 {
+                                string Dummy = AllExpressions[i];
+                                for (int j = 0; j < Dummy2.Count; j++)
+                                {
+                   
                   
-                    if (CompareSimpleString(Dummy, this.AllExpressions[j]) && i != j)
-                    {
-                        Dummy2 = this.AllExpressions[j];
-                        do
-                        {
-
-                        }while(this.AllExpressions.Remove(Dummy2));
-                        Changes++;
-                    }
+                                    if (CompareSimpleString(Dummy, Dummy2[j]) && i != j)
+                                    {
+                                        Dummy = AllExpressions[j];
+                                        do
+                                        {
+                            
+                                        }while(this.AllExpressions.Remove(Dummy));
+                                        Changes++;
+                                        Flag++;
+                                        
+                                    }
+                                }
                 }
-            }
-            if (Changes == 0) { return false; }
+            } while (Changes > 0);
+
+            if (Flag == 0) { return false; }
             else { return true; }
         }
 

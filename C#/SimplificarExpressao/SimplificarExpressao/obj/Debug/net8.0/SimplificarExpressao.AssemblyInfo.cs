@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimplificarExpressao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48cd357d65a08387340a9c9da5fe5dce4f58ce0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8461b3ffd725f494831a95bba83826e79f683340")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimplificarExpressao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimplificarExpressao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
