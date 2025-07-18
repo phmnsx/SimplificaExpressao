@@ -4,7 +4,7 @@ class Program
 {
     public static void Main()
     {
-        List<int> array = [4,5,7,6];
+        List<int> array = [2,3,5];
         Expression teste = new(array);
         SimplifiedExpression teste2 = new(teste);
         Console.WriteLine("a");
