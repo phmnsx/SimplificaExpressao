@@ -42,3 +42,4 @@ C:/Users/Pedro/Desktop/projeto/SimplificaExpressao/C#/SimplificarExpressao/Simpl
 /home/hugo/SimplificaExpressao/C#/SimplificarExpressao/SimplificarExpressao/obj/Debug/net8.0/SimplificarExpressao.pdb
 /home/hugo/SimplificaExpressao/C#/SimplificarExpressao/SimplificarExpressao/obj/Debug/net8.0/SimplificarExpressao.genruntimeconfig.cache
 /home/hugo/SimplificaExpressao/C#/SimplificarExpressao/SimplificarExpressao/obj/Debug/net8.0/ref/SimplificarExpressao.dll
+/home/hugo/SimplificaExpressao/C#/SimplificarExpressao/SimplificarExpressao/bin/Debug/net8.0/ex_and.pla
