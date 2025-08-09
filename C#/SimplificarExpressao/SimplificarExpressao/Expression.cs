@@ -5,7 +5,7 @@ public class Expression
 	public List<string> Expressions { get; }
 	public List<List<string>> Groups { get; }
     public int VarCount { get; }
-	public Expression(List<int> TrueValues) // 010 101
+	public Expression(List<long> TrueValues) // 010 101
 	{
 		TrueValues.Sort();
 		this.Expressions = new List<string>();
@@ -15,7 +15,7 @@ public class Expression
 			Expressions.Add(Convert.ToString(TrueValues[i], 2));
 			Expressions[i] = Expressions[i].PadLeft(this.VarCount, '0');
 		}
-		int Index = 0;
+		long Index = 0;
 		List<string>? CurrentGroup = new();
         this.Groups = new();
 		do
@@ -29,7 +29,7 @@ public class Expression
 		} while (CurrentGroup != null);	
 
 	}
-	private List<string>? GroupExpressions(int GroupIndex)
+	private List<string>? GroupExpressions(long GroupIndex)
 	{
 		string Buffer;
 		List<string> GroupedExpressions = new();

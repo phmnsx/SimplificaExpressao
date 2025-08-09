@@ -18,7 +18,7 @@ namespace SimplificarExpressao
 				termos.Add(new Termo(expression.AllExpressions[i]));
 			}
 
-			List<int> TermosContados = new List<int>();
+			List<long> TermosContados = new List<long>();
 
 			for(int i = 0; i < termos.Count; i++)
 			{
@@ -38,12 +38,12 @@ namespace SimplificarExpressao
 
 		private class Termo
 		{
-			public List<int> Termos { get; set; }
+			public List<long> Termos { get; set; }
 			public string Expressao;
 			public Termo(string Expressao)
 			{
 				this.Expressao = Expressao;
-				this.Termos = new List<int>();
+				this.Termos = new List<long>();
 				List<string> ExpressoesTemp = new List<string>();
 				ExpressoesTemp.Add(Expressao);
 				do
@@ -73,7 +73,7 @@ namespace SimplificarExpressao
 
                 for (int i = 0;i < ExpressoesTemp.Count;i++)
 				{
-                    this.Termos.Add(Convert.ToInt32(ExpressoesTemp[i], 2));
+                    this.Termos.Add(Convert.ToInt64(ExpressoesTemp[i], 2));
 				}
 			}
 

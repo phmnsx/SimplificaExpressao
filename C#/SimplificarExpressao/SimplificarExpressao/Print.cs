@@ -1,7 +1,7 @@
 ﻿using System;
 namespace SimplificarExpressao
 { 
-	public static class Print
+	public static class Prlong
 	{
 		public static void ExpressaoFinal(FinalExpression expression)
 		{

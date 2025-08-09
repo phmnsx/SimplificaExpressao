@@ -1,47 +1,30 @@
 ﻿using SimplificarExpressao;
 using System.Collections;
 
-
 class Program
 {
+
     public static void Main()
     {
-        List<int> array = [2, 3, 5];
-        Expression teste = new(array);
-        SimplifiedExpression teste2 = new(teste);
+        //LerArquivo leitor = new();
+        Console.WriteLine("Digite o nome do arquivo:");
+        string caminhoArquivo = Console.ReadLine();
 
-        Console.WriteLine("a");
-        for (int i = 0; i < teste.Expressions.Count; i++)
+        var watch = System.Diagnostics.Stopwatch.StartNew();
+        Console.WriteLine("Comecou");
+        
+        List<long> list = LerArquivo.LerMlongermos(caminhoArquivo, 1);
+        for (int i = 0; i < list.Count; i++)
         {
-            Console.WriteLine(teste.Expressions[i]); // Da as expressoes q dão verdade "cruas"
+            Console.WriteLine(i + ": " + list[i]);
+            Console.WriteLine(list[i] < list[i + 1]);
         }
+        FinalExpression ef = new FinalExpression(new SimplifiedExpression(new Expression(list)));
+        watch.Stop();
+        var elapsedMs = watch.ElapsedMilliseconds;
+        Console.WriteLine(elapsedMs.ToString());
 
-        Console.WriteLine("b");
-        for (int i = 0; i < teste2.AllExpressions.Count; i++)
-        {
-            Console.WriteLine(teste2.AllExpressions[i]); // Da as expressoes q dão verdade com os valores q não importam sendo '-', ou seja, (0100 or 0101) = (010-)
-        }
-
-        Console.WriteLine("c");
-        ArrayList tabela = Cobertura.GerarTabela(teste2.AllExpressions, teste.Expressions);
-
-        // Percorre os grupos e imprime o implicante seguido pelos mintermos que ele cobre
-        foreach (ArrayList grupo in tabela)
-        {
-            Console.Write(grupo[0] + " cobre:\n");
-            for (int i = 1; i < grupo.Count; i++)
-            {
-                Console.Write(grupo[i] + " ");
-            }
-            Console.WriteLine();
-        }
-        Console.WriteLine("d");
-        string resultadoFinal = Minimizador.MinimizarExpressao(tabela, teste.Expressions);
-        Console.WriteLine("Expressão:");
-        Console.WriteLine(resultadoFinal);
-        LerArquivo leitor = new();
-        string caminhoArquivo = "ex_and.pla";
-        int indiceSaida = 1;
-        array = leitor.LerMintermos(caminhoArquivo, indiceSaida);
+        Prlong.ExpressaoFinal(ef);
     }
+
 }

@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-public class LerArquivo
+public static class LerArquivo
 {
-    public List<int> LerMintermos(string caminhoArquivo, int indiceSaida)
+    public static List<long> LerMlongermos(string caminhoArquivo, long indiceSaida)
     {
-        List<int> mintermos = new List<int>();
-
+        List<long> mlongermos = new List<long>();
+        long i = 0;
         try
         {
             foreach (string linha in File.ReadLines(caminhoArquivo))
@@ -16,18 +16,20 @@ public class LerArquivo
                     continue;
 
                 string[] partes = linha.Trim().Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
-                if (partes.Length == 2 && partes[1].Length > indiceSaida)
+                if (partes[indiceSaida].Length > 0)
                 {
-                    if (partes[1][indiceSaida] == '1')
+
+                    //Console.WriteLine(partes[indiceSaida]);
+                    if (partes[indiceSaida] == "1")
                     {
                         string entradaBinaria = partes[0];
-
+                        
                         if (!entradaBinaria.Contains("-"))
                         {
                             try
                             {
-                                int valorDecimal = Convert.ToInt32(entradaBinaria, 2);
-                                mintermos.Add(valorDecimal);
+                                long valorDecimal = Convert.ToInt64(entradaBinaria, 2);
+                                mlongermos.Add(valorDecimal);
                             }
                             catch (FormatException)
                             {
@@ -43,6 +45,6 @@ public class LerArquivo
             Console.Error.WriteLine("Erro ao ler o arquivo: " + ex.Message);
         }
 
-        return mintermos;
+        return mlongermos;
     }
 }

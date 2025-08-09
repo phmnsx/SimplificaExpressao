@@ -3,26 +3,26 @@ using System.Collections.Generic;
 
 public class Minimizador
 {
-    public static string MinimizarExpressao(ArrayList tabela, List<string> mintermosOriginais)
+    public static string MinimizarExpressao(ArrayList tabela, List<string> mlongermosOriginais)
     {
         ArrayList implicantesSelecionados = new ArrayList();
-        ArrayList mintermsRestantes = new ArrayList(mintermosOriginais);
+        ArrayList mlongermsRestantes = new ArrayList(mlongermosOriginais);
 
         //seleciona implicantes essenciais
-while (mintermsRestantes.Count > 0)
+while (mlongermsRestantes.Count > 0)
 {
     string melhorImplicante = null;
-    int maxCobertura = 0;
+    long maxCobertura = 0;
 
     foreach (ArrayList grupo in tabela)
     {
         string implicante = (string)grupo[0];
         if (implicantesSelecionados.Contains(implicante)) continue;
 
-        int cobertura = 0;
-        foreach (string minterm in grupo.GetRange(1, grupo.Count - 1))
+        long cobertura = 0;
+        foreach (string mlongerm in grupo.GetRange(1, grupo.Count - 1))
         {
-            if (mintermsRestantes.Contains(minterm))
+            if (mlongermsRestantes.Contains(mlongerm))
             {
                 cobertura++;
             }
@@ -43,9 +43,9 @@ while (mintermsRestantes.Count > 0)
         {
             if ((string)grupo[0] == melhorImplicante)
             {
-                foreach (string minterm in grupo.GetRange(1, grupo.Count - 1))
+                foreach (string mlongerm in grupo.GetRange(1, grupo.Count - 1))
                 {
-                    mintermsRestantes.Remove(minterm);
+                    mlongermsRestantes.Remove(mlongerm);
                 }
                 break;
             }
@@ -53,7 +53,7 @@ while (mintermsRestantes.Count > 0)
     }
     else
     {
-        break; // Nenhum implicante cobre os mintermos restantes
+        break; // Nenhum implicante cobre os mlongermos restantes
     }
 }
 

@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|c:\\users\\pedro\\desktop\\projeto\\simplificaexpressao\\c#\\simplificarexpressao\\simplificarexpressao\\lerarquivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|solutionrelative:simplificarexpressao\\lerarquivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|c:\\users\\pedro\\desktop\\projeto\\simplificaexpressao\\c#\\simplificarexpressao\\simplificarexpressao\\minimizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|solutionrelative:simplificarexpressao\\minimizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|c:\\users\\pedro\\desktop\\projeto\\simplificaexpressao\\c#\\simplificarexpressao\\simplificarexpressao\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|solutionrelative:simplificarexpressao\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|c:\\users\\pedro\\desktop\\projeto\\simplificaexpressao\\c#\\simplificarexpressao\\simplificarexpressao\\print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|solutionrelative:simplificarexpressao\\print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|c:\\users\\pedro\\desktop\\projeto\\simplificaexpressao\\c#\\simplificarexpressao\\simplificarexpressao\\finalexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|solutionrelative:simplificarexpressao\\finalexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|c:\\users\\pedro\\desktop\\projeto\\simplificaexpressao\\c#\\simplificarexpressao\\simplificarexpressao\\ex_and.pla||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|solutionrelative:simplificarexpressao\\ex_and.pla||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE8FA92C-8350-43FF-A62E-EFFC95A44682}|SimplificarExpressao\\SimplificarExpressao.csproj|c:\\users\\pedro\\desktop\\projeto\\simplificaexpressao\\c#\\simplificarexpressao\\simplificarexpressao\\simplifiedexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,45 +42,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Print.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\Print.cs",
+              "RelativeDocumentMoniker": "SimplificarExpressao\\Print.cs",
+              "ToolTip": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\Print.cs",
+              "RelativeToolTip": "SimplificarExpressao\\Print.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T18:34:16.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Minimizar.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\Minimizar.cs",
+              "RelativeDocumentMoniker": "SimplificarExpressao\\Minimizar.cs",
+              "ToolTip": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\Minimizar.cs",
+              "RelativeToolTip": "SimplificarExpressao\\Minimizar.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAEsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T18:33:01.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FinalExpression.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\FinalExpression.cs",
+              "RelativeDocumentMoniker": "SimplificarExpressao\\FinalExpression.cs",
+              "ToolTip": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\FinalExpression.cs",
+              "RelativeToolTip": "SimplificarExpressao\\FinalExpression.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T18:31:23.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ex_and.pla",
+              "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\ex_and.pla",
+              "RelativeDocumentMoniker": "SimplificarExpressao\\ex_and.pla",
+              "ToolTip": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\ex_and.pla",
+              "RelativeToolTip": "SimplificarExpressao\\ex_and.pla",
+              "ViewState": "AgIAAOUYAAAAAAAAAAAUwAUZAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-09T17:18:50.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LerArquivo.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\LerArquivo.cs",
+              "RelativeDocumentMoniker": "SimplificarExpressao\\LerArquivo.cs",
+              "ToolTip": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\LerArquivo.cs",
+              "RelativeToolTip": "SimplificarExpressao\\LerArquivo.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwB8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T16:47:49.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\Program.cs",
               "RelativeDocumentMoniker": "SimplificarExpressao\\Program.cs",
               "ToolTip": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\Program.cs",
               "RelativeToolTip": "SimplificarExpressao\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBMAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T00:04:25.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "SimplifiedExpression.cs",
               "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\SimplifiedExpression.cs",
               "RelativeDocumentMoniker": "SimplificarExpressao\\SimplifiedExpression.cs",
               "ToolTip": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\SimplifiedExpression.cs",
               "RelativeToolTip": "SimplificarExpressao\\SimplifiedExpression.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAuwCoAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAJ8AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T23:49:17.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Expression.cs",
               "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\Expression.cs",
               "RelativeDocumentMoniker": "SimplificarExpressao\\Expression.cs",
               "ToolTip": "C:\\Users\\Pedro\\Desktop\\projeto\\SimplificaExpressao\\C#\\SimplificarExpressao\\SimplificarExpressao\\Expression.cs",
               "RelativeToolTip": "SimplificarExpressao\\Expression.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwCIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T23:42:08.251Z"
+              "WhenOpened": "2025-07-15T23:42:08.251Z",
+              "EditorCaption": ""
             }
           ]
         }

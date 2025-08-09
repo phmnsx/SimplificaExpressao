@@ -18,10 +18,10 @@ namespace SimplificarExpressao
             this.Groups = new(expression.Groups);
             this.AllExpressions = new List<string>(expression.Expressions);
             this.SimplifiedExpressions = new List<string>();
-            int Changes;
+            long Changes;
             do
             {
-                int Changes1 = 0;
+                long Changes1 = 0;
                 Changes = 0;
                 for (int i = 0; i < this.Groups.Count; i++) // -1 ou -2 ?
                 {
@@ -49,7 +49,7 @@ namespace SimplificarExpressao
                 
                 List<string>? CurrentGroup = new();
                 this.Groups = new();
-                for (int i = 0; i < expression.VarCount; i++)
+                for (long i = 0; i < expression.VarCount; i++)
                 {
                     CurrentGroup = GroupExpressions(i);
                     if (CurrentGroup == null)
@@ -97,7 +97,7 @@ namespace SimplificarExpressao
             }
             return A.Remove(ChangeIndex, 1).Insert(ChangeIndex, "-");
         }
-        private List<string>? GroupExpressions(int GroupIndex)
+        private List<string>? GroupExpressions(long GroupIndex)
         {
             string Buffer;
             List<string> GroupedExpressions = new();
@@ -117,7 +117,7 @@ namespace SimplificarExpressao
         } //herança nao quis funcionar cmg
         private bool EliminateEquivalents()
         {
-            int Changes = 0;
+            long Changes = 0;
             List<string> Dummy2 = this.AllExpressions;
             int Flag = 0;
             do
@@ -153,13 +153,21 @@ namespace SimplificarExpressao
         {
             int Changes = 0;
             if (str1 == str2) { return false; }
-            for (int i = 0; i < str1.Length; i++)
+            for (int i = 0; i < Math.Min(str1.Length, str2.Length); i++)
             {
-                if ((str1[i] == str2[i]) || str1[i] == '-')
+                try
                 {
-                    Changes++;
-                    
-                } 
+                    if ((str1[i] == str2[i]) || str1[i] == '-')
+                    {
+                        Changes++;
+
+                    }
+                }
+                catch(IndexOutOfRangeException)
+                {
+                    Console.WriteLine("outofrangeexception");
+                    break;
+                }
             }
             if (Changes != str1.Length) { return false; }
             else { return true; }
